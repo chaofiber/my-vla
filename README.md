@@ -19,6 +19,10 @@ python scripts/inference_service.py --server --embodiment_tag new_embodiment --d
 
 ## 2. Launch the Simulator
 
+First you need to install the virtual environment for the simulator first, follow this example from this link: https://github.com/Physical-Intelligence/openpi/tree/main/examples/libero
+
+
+
 In a separate terminal, activate the virtual environment:
 
 ```bash

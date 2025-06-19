@@ -29,9 +29,7 @@ from config.data_config import DATA_CONFIG_MAP
 from gr00t.eval.robot import RobotInferenceClient, RobotInferenceServer
 # from gr00t.experiment.data_config import DATA_CONFIG_MAP
 from gr00t.model.policy import Gr00tPolicy
-BASE = os.path.dirname(__file__)   # .../Isaac-GR00T/scripts
-LIBERO = os.path.abspath(os.path.join(BASE, "../sim/libero"))
-sys.path.insert(0, LIBERO)
+
 import websocket_policy_server
 
 
@@ -57,7 +55,7 @@ if __name__ == "__main__":
         default="gr1_arms_waist",
     )
 
-    parser.add_argument("--port", type=int, help="Port number for the server.", default=8000)
+    parser.add_argument("--port", type=int, help="Port number for the server.", default=5555)
     parser.add_argument(
         "--host", type=str, help="Host address for the server.", default="localhost"
     )

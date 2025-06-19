@@ -56,9 +56,6 @@ class WebsocketPolicyServer:
                 obs = unsqueeze_dict_values(obs)
                 normalized_input = unsqueeze_dict_values
                 normalized_input = self._policy.apply_transforms(obs)
-                # model = GR00T_N1.from_pretrained(
-                #     pretrained_model_name_or_path="/srv/beegfs02/scratch/qingxuan_project/data/gr00t_tmp/gr00t_libero_spatial_30k",
-                #     compute_dtype="bfloat16")
                 model = self._policy.model
                 model_dtype = next(model.parameters()).dtype
 
